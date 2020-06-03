@@ -21,6 +21,7 @@ public class Planete {
     }
     public Planete(String name, int age) {
         /* initialisation des variables d'instance par des valeurs données*/
+        super();
         this.name = name;
         this.age = age;
     }
