@@ -9,13 +9,15 @@ import java.util.Random;
  * @author CYLIA & IBRAHIM @version DU 24 MAI 2020
  */
 public class Planete {
-    /* La planete est définie par son nom et son age (en million d'année)*/
+    /* La planete est définie par son nom et son age (en million d'année) ainsi que l'etoile d'orbite*/
     private String name;
     private int age;
+    private Soleil singleton;
 
     public Planete() {/* initialisation des variables d'instance zéro */
         name = "PlaneteX";
         age = 0;
+        Soleil singleton = Soleil.getInstance();
     }
     public Planete(String name, int age) {
         /* initialisation des variables d'instance par des valeurs données*/
