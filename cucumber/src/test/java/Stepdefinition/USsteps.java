@@ -24,10 +24,8 @@ public class USsteps {
     }
 
     @Then("^le plat est retire du menu$")
-    public void lePlatEstRetireDuMenu(List<Plat> liste) {
-        for(Plat i: liste){
-            System.out.println(i.getNom());
-        }
+    public List<Plat> lePlatEstRetireDuMenu(List<Plat> liste) {
+        return liste;
     }
 
     @Given("^la modification d'un plat necessite l'existence d'un plat$")
@@ -45,7 +43,7 @@ public class USsteps {
     }
 
     @Then("^le plat est modifie$")
-    public void lePlatEstModifie(Plat p) {
-        System.out.println("le nom du plat est modifie en "+p.getNom());
+    public String lePlatEstModifie(Plat p) {
+        return ("le nom du plat est modifie en "+p.getNom());
     }
 }

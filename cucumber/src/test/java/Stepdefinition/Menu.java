@@ -12,19 +12,12 @@ public class Menu {
 	public Menu() {
 		plats=new ArrayList<>();
 	}
-	
-	public Menu(List<Plat> plats) {
-		super();
-		this.plats = plats;
-	}
+
 
 	public List<Plat> getPlats() {
 		return plats;
 	}
 
-	public void setPlats(List<Plat> plats) {
-		this.plats = plats;
-	}
 	
 	public List<Plat> ajouterPlat(Plat p) {
 		plats.add(p);

@@ -9,14 +9,6 @@ public class PlatTest {
         private Plat plat1;
         private Recette recette1;
 
-        // Définissez ici les variables d'instance nécessaires à vos engagements;
-        // Vous pouvez également les saisir automatiquement du présentoir
-        // à l'aide du menu contextuel "Présentoir --> Engagements".
-        // Notez cependant que ce dernier ne peut saisir les objets primitifs
-        // du présentoir (les objets sans constructeur, comme int, float, etc.).
-
-
-
         /**
          * Constructeur de la classe-test PlatTest
          */
@@ -66,8 +58,19 @@ public class PlatTest {
             plat1 = new Plat();
             Menu menu = new Menu();
             plat1.setMenu(menu);
+            plat1.setNom("kfc");
+
+            assertEquals("kfc", plat1.getNom());
             assertEquals(menu, plat1.getMenu());
         }
+
+        @Test
+        public void testCommanderPlat() {
+        plat1 = new Plat();
+        assertEquals("vous avez commande le plat couscous, il coute 10 euro\n",plat1.commanderPlat("couscous", 10));
+        }
+
+
       /*  @Test
         public void testPreparerPlat()
         {

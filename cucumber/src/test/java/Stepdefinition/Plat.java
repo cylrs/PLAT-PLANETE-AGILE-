@@ -22,7 +22,6 @@ public class Plat
      */
     public Plat()
     {
-        // initialisation des variables d'instance
     }
     public Menu getMenu() {
 		return MENU;
@@ -37,9 +36,6 @@ public class Plat
     public void setNom(String s){
         nom = s;
     }
-    public int getPrix(){
-        return this.prix;
-    }
     
     @Override
     public boolean equals(Object o) {
@@ -52,19 +48,13 @@ public class Plat
     
     public void setRecette(Recette r){
         this.recette=r;
-    } 
-    /**
-     * Un exemple de méthode - remplacez ce commentaire par le vôtre
-     *
-     * @param  y   le paramètre de la méthode
-     * @return     la somme de x et de y
-     */
+    }
     
     public String commanderPlat(String name, int price)
     {
-        // Ins�rez votre code ici
         return("vous avez commande le plat "+name+", il coute "+price+" euro\n");
     }
+
    /* public int preparerPlat(int nbIng){
         this.composition = this.recette.ajouterIng(nbIng);
         return this.composition;

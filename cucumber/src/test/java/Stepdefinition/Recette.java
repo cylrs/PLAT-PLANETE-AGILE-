@@ -55,7 +55,6 @@ public abstract class Recette
      */
     public int ajouterIng(int n)
     {
-        // Insérez votre code ici
         extracted(n);
         return nbIng;
     }
