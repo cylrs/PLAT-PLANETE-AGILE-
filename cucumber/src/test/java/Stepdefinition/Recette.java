@@ -63,4 +63,10 @@ public abstract class Recette
 	private void extracted(int n) {
 		nbIng+=n;
 	}
+
+	//methode d'ajout ingredient
+    public String addLegume(Legume l){
+        this.legumeList.add(l);
+        return l.getName();
+    }
 }

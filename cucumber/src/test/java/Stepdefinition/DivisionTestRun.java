@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C://Users//CSadiO//IdeaProjects//cucumber//Features//division.feature")
+        features = "C://Users//CSadiO//IdeaProjects//UNION PROJ//cucumber//Features//division.feature")
 
 
 public class DivisionTestRun {

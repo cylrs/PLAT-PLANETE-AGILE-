@@ -5,9 +5,12 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C://Users//CSadiO//IdeaProjects//UNION PROJ//cucumber//Features//Planete.feature")
+        features = "C://Users//CSadiO//IdeaProjects//UNION PROJ//cucumber//Features//ModifRcpPlanete.feature")
 
-public class PlaneteTestRun {
+public class SoleilTestRun {
+
+
+
+
+
 }
-
-

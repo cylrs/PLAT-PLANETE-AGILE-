@@ -12,5 +12,8 @@ public class Legume {
     public String getName(){ return this.nom; }
     public Planete getMere(){return this.Planete;}
     public void setName(String nom){this.nom = nom;}
+    public boolean isSoleil(){
+        return (this.Planete.getEtoile() == "Soleil");
+    }
 
 }

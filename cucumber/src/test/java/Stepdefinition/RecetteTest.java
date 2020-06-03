@@ -1,10 +1,10 @@
-package Plat;
+package Stepdefinition;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class RecetteTest {
-	private Recette rct;
+    private Recette rct;
 
 //	@Test
 //	public void tesRecetteConstructeur() {
@@ -30,5 +30,6 @@ public class RecetteTest {
 //		assertEquals(10, rct.ajouterIng(10));
 
 //	}
+
 
 }

@@ -8,7 +8,7 @@ import java.util.List;
 public class Satellite {
     // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private String name;
-    private Planete planeteMere;.
+    private Planete planeteMere;
     private int distance;
 
     public Satellite(Planete planeteMere) {

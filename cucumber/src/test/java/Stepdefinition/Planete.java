@@ -17,13 +17,15 @@ public class Planete {
     public Planete() {/* initialisation des variables d'instance zéro */
         name = "PlaneteX";
         age = 0;
-        Soleil singleton = Soleil.getInstance();
+
+        singleton = Soleil.getInstance();
     }
     public Planete(String name, int age) {
         /* initialisation des variables d'instance par des valeurs données*/
         super();
         this.name = name;
         this.age = age;
+        singleton = Soleil.getInstance();
     }
     public String getName() {
         return this.name;
@@ -31,14 +33,18 @@ public class Planete {
     public int getAge() {
         return this.age;
     }
-    public void setNamePlanete(String name) {
-
-        this.name = name;
-    }
     public String getAll() {
 
         return this.name + Integer.toString(this.age);
     }
+    public String getEtoile(){
+        return singleton.getEtoile();
+    }
+    public void setNamePlanete(String name) {
+
+        this.name = name;
+    }
+
     public void setPlanete(String name, int age){
         /*Definit les champs d'une planete */
         this.name= name;

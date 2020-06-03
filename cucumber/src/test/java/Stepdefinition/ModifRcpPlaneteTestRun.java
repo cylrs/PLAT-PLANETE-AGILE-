@@ -1,13 +1,10 @@
 package Stepdefinition;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "C://Users//CSadiO//IdeaProjects//UNION PROJ//cucumber//Features//Planete.feature")
+        features = "C://Users//CSadiO//IdeaProjects//UNION PROJ//cucumber//Features//Soleil.feature")
 
-public class PlaneteTestRun {
+public class ModifRcpPlaneteTestRun {
 }
-
-

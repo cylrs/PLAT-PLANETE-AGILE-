@@ -22,6 +22,6 @@ public class Soleil {
     {
         return String.format("Je suis l'etoile : %s", etoile);
     }
-    public String getEtoile() {return etoile};
+    public String getEtoile() {return etoile; }
 }
 
